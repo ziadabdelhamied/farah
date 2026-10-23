@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fff6f7">
+  <title>حكايتنا يا فرح ❤️</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="soft-glow glow-one"></div><div class="soft-glow glow-two"></div>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="بداية الصفحة"><span class="brand-heart">♥</span> حكايتنا</a>
+    <button id="musicToggle" class="music-button" type="button" aria-pressed="false">
+      <span id="musicIcon">♫</span><span id="musicLabel">شغّل موسيقانا</span>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">A LITTLE WEBSITE, A LOT OF LOVE</p>
+        <h1>لفرح… <span>حبيبتي</span> ❤️</h1>
+        <p class="hero-text">في حكايات بتبدأ عادي، وبعدين بتبقى أحلى حاجة في الدنيا. ودي حكايتي أنا وإنتِ… ولسه أجمل فصولها جاية.</p>
+        <div class="hero-actions">
+          <a class="primary-button" href="#memories">تعالي نفتكر حكايتنا <span>↓</span></a>
+          <span class="tiny-note">اتعملت مخصوص عشانك يا فرح</span>
+        </div>
+      </div>
+      <div class="hero-art">
+        <div class="photo-frame hero-frame">
+          <img src="photos/cover.jpg" alt="صورة لينا سوا" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="photo-placeholder"><span>♡</span><b>حط صورتنا هنا</b><small>photos/cover.jpg</small></div>
+          <div class="frame-caption">you + me, always</div>
+        </div>
+        <span class="floating-heart heart-a">♥</span><span class="floating-heart heart-b">♡</span>
+        <div class="date-stamp"><small>بداية حكايتنا</small><b>18 فبراير 2025</b></div>
+      </div>
+    </section>
+
+    <section class="counter-section">
+      <div class="counter-card">
+        <span class="counter-heart">♥</span>
+        <p>من يوم ما بدأت حكايتنا</p>
+        <div class="counter-number" id="daysTogether">—</div>
+        <span class="counter-caption">يوم من الذكريات، ولسه في أيام كتير مستنيانا</span>
+      </div>
+    </section>
+
+    <section class="section memories" id="memories">
+      <div class="section-heading">
+        <p class="eyebrow">OUR LITTLE TIME CAPSULE</p>
+        <h2>ذكرياتنا <span>بالصور والتاريخ</span></h2>
+        <p>كل صورة ليها حكاية… بدّل الصور والتواريخ بكلامكم الحقيقي.</p>
+      </div>
+      <div class="memory-grid" id="memoryGrid"></div>
+    </section>
+
+    <section class="section timeline-section" id="timeline">
+      <div class="section-heading">
+        <p class="eyebrow">CHAPTERS OF US</p>
+        <h2>حكايتنا <span>خطوة بخطوة</span></h2>
+        <p>مش لازم تكون الحكاية كبيرة… كفاية إنها حكايتنا.</p>
+      </div>
+      <div class="timeline" id="timelineList"></div>
+    </section>
+
+    <section class="letter-section section" id="letter">
+      <div class="letter-card">
+        <div class="letter-top">♡ رسالة من قلبي ♡</div>
+        <h2>يا فرح،</h2>
+        <p>يمكن مش بعرف أقول كل اللي جوايا كل مرة، بس إنتِ بالنسبالي مش مجرد شخص بحبه… إنتِ بقيتي جزء من أيامي ومن الحاجات اللي بتخليني أبتسم من قلبي.</p>
+        <p>من يوم <strong>18 فبراير 2025</strong>، بدأت حكاية غالية عليا. نفسي أفضل أشاركك تفاصيل الأيام الحلوة والصعبة، وأفضل الشخص اللي تلاقي عنده أمان وراحة وضحكة حلوة.</p>
+        <p>الموقع ده بسيط، بس كل تفصيلة فيه معمولة عشان أقولك إنك غالية عندي، وإنّي متحمس لكل ذكرى جديدة هنعملها سوا.</p>
+        <p class="letter-signoff">بحبك يا فرح، وربنا يديمك في حياتي ❤️</p>
+        <div class="letter-flower">✿</div>
+      </div>
+    </section>
+
+    <section class="final-note">
+      <div class="final-heart">♥</div>
+      <h2>دي مش نهاية الحكاية…</h2>
+      <p>دي بس أول صفحة من كل الذكريات اللي لسه هنعيشها سوا.</p>
+      <span>Forever sounds better with you, Farah.</span>
+    </section>
+  </main>
+
+  <footer>اتعمل بحب ❤️ مخصوص لفرح <span>•</span> <a href="#home">ارجعي للبداية ↑</a></footer>
+  <audio id="ourMusic" src="music/our-song.mp3" preload="none" loop></audio>
+  <script src="script.js"></script>
+</body>
+</html>
